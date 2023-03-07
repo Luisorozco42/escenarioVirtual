@@ -11,9 +11,9 @@
 <body>
     <a-scene>
       <a-assets>
-        <video id="lugar" preload="auto" src="recursos/lugarchido.mp4"
+        <video muted id="lugar" preload="auto" src="recursos/lugarchido.mp4"
         width="160" height="90"
-        autoplay loop="true" crossOrigin="anonymous" muted></video>
+        autoplay loop="true" crossOrigin="anonymous"></video>
       </a-assets>
     
       <a-videosphere src="#lugar" play-on-click material geometry scale></a-videosphere>
@@ -22,11 +22,11 @@
                 play-on-click
                 visible="false">
       </a-entity>
-      
-      <a-camera>
+
+    <a-camera>
         <a-entity
-          position="0 0 -1.5"
-          text="align: center;
+            position="0 0 -1.5"
+            text="align: center;
                 width: 6;
                 wrapCount: 100;
                 color: black;
@@ -34,6 +34,7 @@
           hide-on-play="#lugar">
         </a-entity>
         <a-cursor></a-cursor>
+    </a-camera>
     </a-scene>
 </body>
 </html>

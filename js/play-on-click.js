@@ -1,6 +1,8 @@
 AFRAME.registerComponent('play-on-click', {
     init: function () {
       this.onClick = this.onClick.bind(this);
+      var vid = document.getElementById("lugar");
+      vid.muted = false;
     },
     play: function () {
       window.addEventListener('click', this.onClick);
